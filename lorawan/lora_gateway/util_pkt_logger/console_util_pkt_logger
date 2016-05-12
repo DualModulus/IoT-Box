@@ -1,0 +1,82 @@
+loragw_pkt_logger: INFO: found global configuration file global_conf.json, trying to parse it
+loragw_pkt_logger: INFO: global_conf.json does contain a JSON object named SX1301_conf, parsing SX1301 parameters
+loragw_pkt_logger: INFO: lorawan_public 1, clksrc 1
+lgw_board_setconf:566: Note: board configuration; lorawan_public:1, clksrc:1
+loragw_pkt_logger: INFO: radio 0 enabled (type SX1257), center frequency 868000000, RSSI offset -166.000000, tx enabled 1
+lgw_rxrf_setconf:598: Note: rf_chain 0 configuration; en:1 freq:868000000 rssi_offset:-166.000000 radio_type:2 tx_enable:1
+loragw_pkt_logger: INFO: radio 1 enabled (type SX1257), center frequency 868500000, RSSI offset -166.000000, tx enabled 0
+lgw_rxrf_setconf:598: Note: rf_chain 1 configuration; en:1 freq:868500000 rssi_offset:-166.000000 radio_type:2 tx_enable:0
+loragw_pkt_logger: INFO: LoRa multi-SF channel 0 enabled, radio 0 selected, IF 0 Hz, 125 kHz bandwidth, SF 7 to 12
+lgw_rxif_setconf:702: Note: LoRa 'multi' if_chain 0 configuration; en:1 freq:0 SF_mask:0x7e
+loragw_pkt_logger: INFO: LoRa multi-SF channel 1 enabled, radio 1 selected, IF -200000 Hz, 125 kHz bandwidth, SF 7 to 12
+lgw_rxif_setconf:702: Note: LoRa 'multi' if_chain 1 configuration; en:1 freq:-200000 SF_mask:0x7e
+loragw_pkt_logger: INFO: LoRa multi-SF channel 2 enabled, radio 1 selected, IF 0 Hz, 125 kHz bandwidth, SF 7 to 12
+lgw_rxif_setconf:702: Note: LoRa 'multi' if_chain 2 configuration; en:1 freq:0 SF_mask:0x7e
+loragw_pkt_logger: INFO: LoRa multi-SF channel 3 enabled, radio 0 selected, IF -400000 Hz, 125 kHz bandwidth, SF 7 to 12
+lgw_rxif_setconf:702: Note: LoRa 'multi' if_chain 3 configuration; en:1 freq:-400000 SF_mask:0x7e
+loragw_pkt_logger: INFO: LoRa multi-SF channel 4 enabled, radio 0 selected, IF -200000 Hz, 125 kHz bandwidth, SF 7 to 12
+lgw_rxif_setconf:702: Note: LoRa 'multi' if_chain 4 configuration; en:1 freq:-200000 SF_mask:0x7e
+loragw_pkt_logger: INFO: LoRa multi-SF channel 5 enabled, radio 0 selected, IF 0 Hz, 125 kHz bandwidth, SF 7 to 12
+lgw_rxif_setconf:702: Note: LoRa 'multi' if_chain 5 configuration; en:1 freq:0 SF_mask:0x7e
+loragw_pkt_logger: INFO: LoRa multi-SF channel 6 enabled, radio 0 selected, IF 200000 Hz, 125 kHz bandwidth, SF 7 to 12
+lgw_rxif_setconf:702: Note: LoRa 'multi' if_chain 6 configuration; en:1 freq:200000 SF_mask:0x7e
+loragw_pkt_logger: INFO: LoRa multi-SF channel 7 enabled, radio 0 selected, IF 400000 Hz, 125 kHz bandwidth, SF 7 to 12
+lgw_rxif_setconf:702: Note: LoRa 'multi' if_chain 7 configuration; en:1 freq:400000 SF_mask:0x7e
+loragw_pkt_logger: INFO: LoRa standard channel enabled, radio 1 selected, IF -200000 Hz, 250000 Hz bandwidth, SF 7
+lgw_rxif_setconf:676: Note: LoRa 'std' if_chain 8 configuration; en:1 freq:-200000 bw:2 dr:2
+loragw_pkt_logger: INFO: FSK channel enabled, radio 1 selected, IF 300000 Hz, 125000 Hz bandwidth, 50000 bps datarate
+lgw_rxif_setconf:732: Note: FSK if_chain 9 configuration; en:1 freq:300000 bw:3 dr:50000 (50000 real dr) sync:0xC194C1
+loragw_pkt_logger: INFO: global_conf.json does contain a JSON object named gateway_conf, parsing gateway parameters
+loragw_pkt_logger: INFO: gateway MAC address is configured to AA555A0000000000
+loragw_pkt_logger: INFO: found local configuration file local_conf.json, trying to parse it
+loragw_pkt_logger: INFO: local_conf.json does not contain a JSON object named SX1301_conf
+loragw_pkt_logger: INFO: local_conf.json does contain a JSON object named gateway_conf, parsing gateway parameters
+loragw_pkt_logger: INFO: gateway MAC address is configured to AA555A0000000101
+setup_sx125x:358: Note: SX125x #0 version register returned 0x21
+setup_sx125x:366: Note: SX125x #0 clock output disabled
+setup_sx125x:420: Note: SX125x #0 PLL start (attempt 1)
+setup_sx125x:358: Note: SX125x #1 version register returned 0x21
+setup_sx125x:363: Note: SX125x #1 clock output enabled
+setup_sx125x:420: Note: SX125x #1 PLL start (attempt 1)
+lgw_start:887: Note: calibration started (time: 2300 ms)
+lgw_start:908: Note: calibration finished (status = 191)
+Info: Initialising AGC firmware...
+Info: putting back original RADIO_SELECT value
+loragw_pkt_logger: INFO: concentrator started, packet can now be received
+loragw_pkt_logger: INFO: Now writing to log file pktlog_AA555A0000000101_20150301T222954Z.csv
+lgw_receive:1197: FIFO content: 1 10 0 7 b1
+lgw_receive:1212: [0 17]
+Note: LoRa packet
+lgw_receive:1197: FIFO content: 1 d1 0 7 75
+lgw_receive:1212: [4 17]
+Note: LoRa packet
+lgw_receive:1197: FIFO content: 1 56 1 7 ca
+lgw_receive:1212: [3 17]
+Note: LoRa packet
+lgw_receive:1197: FIFO content: 1 30 2 7 df
+lgw_receive:1212: [2 17]
+Note: LoRa packet
+lgw_receive:1197: FIFO content: 1 1f 3 7 54
+lgw_receive:1212: [1 17]
+Note: LoRa packet
+lgw_receive:1197: FIFO content: 1 83 3 7 1a
+lgw_receive:1212: [3 17]
+Note: LoRa packet
+lgw_receive:1197: FIFO content: 1 ad 3 7 1a
+lgw_receive:1212: [3 17]
+Note: LoRa packet
+lgw_receive:1197: FIFO content: 1 d7 3 7 1a
+lgw_receive:1212: [3 17]
+Note: LoRa packet
+lgw_receive:1197: FIFO content: 1 1 0 5 1a
+lgw_receive:1212: [3 17]
+Note: LoRa packet
+lgw_receive:1197: FIFO content: 1 2b 0 7 1a
+lgw_receive:1212: [3 17]
+Note: LoRa packet
+lgw_receive:1197: FIFO content: 1 55 0 7 1a
+lgw_receive:1212: [3 17]
+Note: LoRa packet
+loragw_pkt_logger: INFO: concentrator stopped successfully
+loragw_pkt_logger: INFO: log file pktlog_AA555A0000000101_20150301T222954Z.csv closed, 11 packet(s) recorded
+loragw_pkt_logger: INFO: Exiting packet logger program
