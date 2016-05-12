@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"> 
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<html lang="fr">
+<?php
+
+	$nom = $_POST['nom'];
+	$type = $_POST['type'];
+	$devaddr = $_POST['devaddr'];
+
+	$base = new SQLite3('../bikes.db');
+
+	$base->exec('INSERT INTO designation (velo_id, nom_proprio, velo_type) VALUES (\''.$devaddr .'\',\''.$nom.'\',\''.$type.'\');');
+
+	echo '<script type="text/javascript">
+					window.open("./index.php","_self");
+			 </script>';
+
+	$base->deconnect();
+?>
+</html>
